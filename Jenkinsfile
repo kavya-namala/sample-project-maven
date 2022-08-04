@@ -13,15 +13,9 @@ pipeline {
       }
     }
 
-    stage('Deploy') {
+    stage('deploy') {
       steps {
-        timestamps() {
-          timestamps() {
-            timeout(time: 3, unit: 'HOURS')
-          }
-
-        }
-
+        echo 'Deploy Project'
       }
     }
 
