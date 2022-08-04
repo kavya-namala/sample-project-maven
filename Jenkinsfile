@@ -13,5 +13,17 @@ pipeline {
       }
     }
 
+    stage('Deploy') {
+      steps {
+        timestamps() {
+          timestamps() {
+            timeout(time: 3, unit: 'HOURS')
+          }
+
+        }
+
+      }
+    }
+
   }
 }
