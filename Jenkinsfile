@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        error 'TEST Maven'
+        fileExists 'pom.xml'
       }
     }
 
